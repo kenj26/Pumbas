@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div><img src="logos/logoPumba-removebg-preview2.png" alt="logoPumba" class="pumba"></div>
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-content">
+                <a href="index.html">Registro</a>
+                <a href="https://www.youtube.com/watch?v=z5tBaaqz_Fg&ab_channel=GoldenHoops">LaMelo Ball</a>
+                <a href="#fot">Contactanos</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/PUMA-x-LAMELO-BALL-MB.04.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2>PUMA x LAMELO BALL MB.04 LaFrancé</h2>
+                    <p>Sal a la cancha para transformarte en LaMelo. El MB.04 desata velocidad, control y estilo inigualables. 
+                    </p>
+                    <p>Precio: <strong>$125.00</strong></p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/PUMA-x-LAMELO-BALL-MB.04-Rosado.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2>PUMA x LAMELO BALL MB.04 Iridescent</h2>
+                    <p>Añade dimensión a tu estilo y a tu juego con el último zapato exclusivo de LaMelo Ball, el MB.04 Iridescent. Apareciendo en un llamativo color azul y morado.</p>
+                    <p>Precio: <strong>$125.00</strong></p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/PUMA-x-LAMELO-BALL-MB-11.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2>PUMA x LAMELO BALL MB.04 1Love</h2>
+                    <p>LaMelo Ball no es de esta Tierra, pero afortunadamente viene en paz. Inspirado en el estilo de juego sobrenatural de Melo,</p>
+                    <p>Precio: <strong>$125.00</strong></p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/All-Pro-NITRO™-Basketball-Shoes-12.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h2>All-Pro NITRO™</h2>
+                    <p>El All-Pro NITRO™ 2 aporta un enfoque innovador al espacio del calzado de baloncesto con una entresuela completa NITROFOAM™ y una parte superior de malla diseñada. Esta evolución de nuestro zapato All-Pro original es elegante, de ritmo rápido y está listo para rendir al más alto nivel.</p>
+                    <p>Precio: <strong>$130.00</strong></p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer id="fot" class="footer">
+        <p>&copy; 2024 JHONATAN MOROCO</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        <p class="logos">
+            <a href="https://facebook.com" 
+                ><img src="logos/facebook.png" alt="Facebook" class="log"
+              /></a> 
+              <a href="https://instagram.com" 
+              ><img src="logos/instagram.png" alt="Instagram" class="log"
+            /></a> 
+            <a href="whatsapp.com" 
+              ><img src="logos/whatsapp.png" alt="whatsapp" class="log"
+            /></a> 
+        </p>
+    </footer>
+    <script>
+        document.querySelector('.dropbtn').addEventListener('click', function() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        });
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
